@@ -1,0 +1,20 @@
+name: QuakeCraft
+main: ru.croxi.quakeCraft.QuakeCraft
+version: 0.2
+author: CR0XI
+
+commands:
+  quake:
+    usage: /quake
+    description: QuakeCraft main command.
+
+permissions:
+  quakecraft.*:
+    description: Gives access to all commands of QuakeCraft.
+    children:
+      - quakecraft.start
+      - quakecraft.editmode
+  quakecraft.start:
+    default: op
+  quakecraft.editmode:
+    default: op

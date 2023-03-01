@@ -1,0 +1,103 @@
+minPlayers: 3
+maxPlayers: 5
+recommendedPlayers: 5
+
+editMode: false
+canPlayersPickUpItems: false
+canPlayersDropItems: false
+
+lobbyTime1: 30
+lobbyTime2: 10
+gameTime: 10
+gameTime2: 10
+gunTime: 2
+playerProtectionTime: 3
+
+messages:
+  tooManyPlayers: "&cСлишком много игроков."
+  noPermission: "&cУ Вас нет прав на использование данной команды."
+  notAllowed: "&cВы не можете использовать эту команду."
+  lobbyTime: "%prefix% &7До начала игры осталось &e%time% &7с."
+  lobbyTimeOnScreen: "&e%time%"
+  gameTime: "%prefix% &7До конца игры осталось &e%time% &7с."
+  gameStarted: "%prefix% &a&lУдачи!"
+  gameStartedOnScreen: "&a&lУдачи!"
+  notEnoughPlayers: "%prefix% &cНедостаточно игроков для начала игры."
+  gameCancellation: "&c&lОтменено"
+  playerJoin: "%prefix% &7Игрок &e%player% &7подключился. &8(&e%count%&7/&e3&8)"
+  playerQuit: "%prefix% &7Игрок &e%player% &7отключился. &8(&c%count%&7/&e3&8)"
+  gunWaiting: "%prefix% &7Подождите ещё &e%time% &7с."
+  kill: "%prefix% &7Игрок &e%victim% &7был убит игроком &e%player%&7."
+  onlyForPlayers: "%prefix% &cOnly players can use this command!"
+  editModeError: "%prefix% &cДля этого включите режим редактирования в файле конфигурации."
+  spawnpointCreated: "%prefix% &aТочка возрождения №%id% &aсоздана!"
+  spawnpointRemoved: "%prefix% &aТочка успешно удалена!"
+  spawnpointDoesNotExist: "%prefix% &cТочка №%id% не существует."
+  onlyNumbersAreAllowed: "%prefix% &cРазрешены только цифры!"
+  invalidCommand: "%prefix% &cВы имели ввиду: «/quake %usage%»?"
+  idIsEmptyError: "%prefix% &cУкажите номер точки возрождения."
+  locationsAreEmptyError: "%prefix% &cТочки возрождения отсутствуют. Состояние игры переведено в режим редактирвания. В режиме редактирования Вы можете создавать и удалять токи возрождения игроков."
+  locationsAreEmptyCommandError: "%prefix% &cТочки возрождения отсутствуют. Введите: «/quake spawnpoint create» для создания новой точки возрождения."
+  editModeEnabled: "%prefix% &aВключён режим редактирования. В режиме редактирования Вы можете создавать и удалять токи возрождения игроков."
+  noPermissionToEditModeKickMessage: "&cПроводятся технические работы."
+  gameOverCommandError: "%prefix% &cИгра уже закончена!"
+  gameIsOnCommandError: "%prefix% &cИгра уже идёт!"
+  gameIsOnKickMessage: "&cИгра уже идёт."
+  gameOver:
+    message:
+    - "\n"
+    - "&a&m=================================="
+    - ""
+    - "              &f&lПобедитель: &e&l%player%"
+    - ""
+    - "            &e1 &7место - &e%1%&8 (&7%kills1%&8)&7."
+    - "            &e2 &7место - &e%2%&8 (&7%kills2%&8)&7."
+    - "            &e3 &7место - &e%3%&8 (&7%kills3%&8)&7.\n"
+    - ""
+    - "&a&m=================================="
+    messageOnScreen: "&e%player%"
+
+
+  prefix: "&eQuake&fCraft &8>>"
+
+help:
+  message:
+  - "\n"
+  - "&a&m=================================================="
+  - ""
+  - "                 &lПомощь по &eQuake&fCraft"
+  - ""
+  - "%commands%"
+  - "&a&m=================================================="
+  - ""
+
+  commandFormat: "%prefix% &e/quake %command% &7- %description%&7."
+
+commandDescription:
+  start: "начать игру"
+  spawnpoint: "Создать или удалить точку возрождения"
+
+items:
+  gun:
+    displayName: "&5&lПистолет"
+    material: IRON_HOE
+  helmet:
+    displayName: "&5&lБронешлем"
+    material: CHAINMAIL_HELMET
+  chestplate:
+    displayName: "&5&lБронежелет"
+    material: CHAINMAIL_CHESTPLATE
+  leggings:
+    displayName: "&5&lБронепоножи"
+    material: CHAINMAIL_LEGGINGS
+  boots:
+    displayName: "&5&lБронеботинки"
+    material: CHAINMAIL_BOOTS
+
+objective:
+  name: "&6&lЛидеры"
+
+  content:
+  - "%players%"
+
+  placeFormat: "&7%place%. &f%player%&7: &e%kills%"
